@@ -3,11 +3,11 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/mobilele?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC
     username: root
-    password: password
+    password: Milan030104
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: update
     defer-datasource-initialization: true
   mvc:
     hiddenmethod:
@@ -22,7 +22,7 @@ spring:
             client-secret: your-secret-here
   sql:
     init:
-      mode: always
+#      mode:
 
 logging:
   level:
@@ -30,10 +30,10 @@ logging:
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 
 mail:
-  host: "localhost"
-  port: 1025
-  username: "mobilele@mobilele.com"
-  password: ""
+  host: "smtp.office365.com"
+  port: 587
+  username: "vsi4kiBrichki@outlook.com"
+  password: "Milan030104"
 
 management:
   server:

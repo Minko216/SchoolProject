@@ -15,7 +15,7 @@
 
 <div th:replace="fragments/navbar">Navbar</div>
 <div class="container">
-    <h2 class="text-center text-white">Search for offers</h2>
+    <h2 class="text-center text-4E555BB2">Search for offers</h2>
     <form
             th:method="GET"
             th:action="@{/offers/search}"
@@ -23,7 +23,7 @@
             class="form-inline"
             style="justify-content: center; margin-top: 50px;"
     >
-        <div style="position: relative">
+        <div class = "serchBar" >
             <input
                     th:field="*{model}"
                     th:errorclass="is-invalid"
@@ -61,8 +61,8 @@
             >
                 Try writing something this time.
             </small>
+            <button class="btn my-2 my-sm-0" type="submit"  >Search</button>
         </div>
-        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
     </form>
 </div>
 
